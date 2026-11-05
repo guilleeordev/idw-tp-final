@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="base.css">
+        <title>Veterinaria La Mary</title>
+
+        <script defer src="./sesion.js"></script>
+        <script defer src="./header.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <a href="./index.html" class="logo">
+                <div class="icon">
+                    <p>M</p>
+                </div>
+
+                <div class="marca">
+                    <h1>La Mary</h1>
+                    <h2>CLÍNICA VETERINARIA</h2>
+                </div>
+            </a>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a  href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./institucional.html">Institucional</a>
+                    </li>
+                    <li>
+                        <a href="./contacto.html">Contacto</a>
+                    </li>
+                    <li id="link-login">
+                        <a href="./login.html" class="boton-container">
+                            <button>
+                                Iniciar Sesión
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main class="py-4">
+               <section class="container py-5">
+                    <div class="row align-items-center g-4">
+
+                        <article class="col-12 col-md-6">
+
+                            <span class="badge rounded-pill text-bg-light text-primary mb-3">SOBRE NOSOTROS</span>
+
+                            <h3 class="fw-semibold mb-3 display-3">
+                                Un lugar tranquilo para tu mascota
+                            </h3>
+
+                            <p class="text-secondary mb-4">
+                                Somos una clínica de barrio, abierta desde 2005.
+                                Empezamos con un consultorio y una sala de espera chica;
+                                hoy el equipo es de cinco veterinarios
+                                y el lugar mantiene la misma calma.
+                            </p>
+
+                            <div class="d-flex gap-2">
+                                <a href="#equipo" class="btn btn-primary">Conocer al equipo</a>
+                                <a href="#servicios" class="btn btn-light">Ver servicios</a>
+                            </div>
+
+                        </article>
+
+                        <div class="col-12 col-md-6">
+                            <img class="img-fluid rounded" src="./assets/images/hero.jpg" alt="Sala de espera de la clínica">
+                        </div>
+
+                    </div>
+                </section>
+
+                <section class="container-fluid border-top py-4 text-bg-primary">
+                    <div class="container">
+                        <div class="row align-items-start justify-content-center g-4">
+                            <article class="col-12 col-md-6">
+                                    <span class="badge rounded-pill px-0">NUESTRA HISTORIA</span>
+                                    <h3 class="fs-1 fw-semibold">Un poco de Nuestra historia</h3>
+                            </article>
+
+                            <article class="col-12 col-md-6">
+                                <ul class="list-group fit-content">
+                                    <li class="list-group-item">
+                                        <div class="d-flex gap-4">
+                                            <span class="text-primary fw-semibold">2005</span>
+                                            <p>Abrimos con un consultorio en Av. Siempre Viva.</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex gap-4">
+                                            <span class="text-primary fw-semibold">2010</span>
+                                            <p>Sumamos quirófano propio e internación de día.</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex gap-4">
+                                            <span class="text-primary fw-semibold">2015</span>
+                                            <p>Laboratorio en la clínica: resultados en el día.</p>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex gap-4">
+                                            <span class="text-primary fw-semibold">2025</span>
+                                            <p>Guardia de urgencias las 24 horas, todos los días.</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="servicios" class="container-fluid border-top py-5">
+                    <div class="container">
+
+                        <div class="mb-4">
+                            <p class="text-primary fw-semibold text-uppercase small mb-2">Servicios</p>
+                            <h3 class="fs-1 fw-semibold">Qué se puede hacer en la clínica</h3>
+                        </div>
+
+                        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+                            <div class="col">
+                                <div class="card shadow h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title fs-5 fw-semibold">Consultas</h4>
+                                        <p class="card-text mb-0">Chequeos y controles con turno programado.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title fs-5 fw-semibold">Vacunación</h4>
+                                        <p class="card-text mb-0">Plan sanitario para perros y gatos, con recordatorios.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title fs-5 fw-semibold">Cirugía</h4>
+                                        <p class="card-text mb-0">Plan sanitario para perros y gatos, con recordatorios.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title fs-5 fw-semibold">Laboratorio</h4>
+                                        <p class="card-text mb-0">Plan sanitario para perros y gatos, con recordatorios.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title fs-5 fw-semibold">Imágenes</h4>
+                                        <p class="card-text mb-0">Plan sanitario para perros y gatos, con recordatorios.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col">
+                                <div class="card shadow h-100">
+                                    <div class="card-body">
+                                        <h4 class="card-title fs-5 fw-semibold">Urgencias</h4>
+                                        <p class="card-text mb-0">Plan sanitario para perros y gatos, con recordatorios.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+ 
+               <section id="equipo" class="container-fluid border-top py-4">
+                    <div class="container"> 
+                        <div class="row align-items-center g-4">
+                            <article class="col-12 p-0">
+                                    <span class="badge rounded-pill text-primary px-0">EL EQUIPO </span>
+                                    <h3 class="fs-1 fw-semibold">Las personas del equipo</h3>
+                            </article>
+
+                            <article class="col-12">
+                            
+                                    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
+
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <img src="./assets/images/equipo_1.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-semibold">Mariana Ríos</h5>
+                                                    <p class="card-text">Directora · Clínica general</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <img src="./assets/images/equipo_2.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-semibold">Sofía Paz</h5>
+                                                    <p class="card-text">Felinos y comportamiento</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <img src="./assets/images/equipo_3.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-semibold">Diego Ferrer</h5>
+                                                    <p class="card-text">Cirugía</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                        <div class="col">
+                                            <div class="card shadow">
+                                                <img src="./assets/images/equipo_4.jpeg" class="card-img-top" alt="...">
+                                                <div class="card-body">
+                                                    <h5 class="card-title fw-semibold">Nicolas Vera</h5>
+                                                    <p class="card-text">Diagnóstico por imágenes</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+               </section>
+        </main>
+
+        <footer>
+           <div class="footer-marca">
+                <span>La Mary</span>
+                <p>
+                    Av. Siempre Viva 1234, Concordia, Entre Ríos.
+                    Lunes a sábado. Urgencias 24 h.
+                </p>
+           </div>
+
+           <div class="footer-seccion">
+                <span>SECCIONES</span>
+                <a href="./index.html">Inicio</a>
+                <a href="./institucional.html">Institucional</a>
+                <a href="./contacto.html">Contacto</a>
+           </div>
+
+           <div class="footer-seccion">
+                <span>SEGUINOS</span>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">TikTok</a>
+           </div>
+        </footer>
+
+    </body>
+
+</html>

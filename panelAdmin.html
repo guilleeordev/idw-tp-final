@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="base.css">
+  <title>Veterinaria La Mary</title>
+
+  <script defer src="./sesion.js"></script>
+  <script defer src="./panelAdmin.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <a href="./index.html" class="logo">
+      <div class="icon">
+        <p>M</p>
+      </div>
+
+      <div class="marca">
+        <h1>La Mary</h1>
+        <h2>CLÍNICA VETERINARIA</h2>
+      </div>
+    </a>
+
+    <nav class="navegacion">
+      <ul>
+        <li>
+          <a href="index.html">Inicio</a>
+        </li>
+        <li>
+          <a href="institucional.html">Institucional</a>
+        </li>
+        <li>
+          <a href="contacto.html">Contacto</a>
+        </li>
+        <li>
+          <a class="active" href="panelAdmin.html">Panel</a>
+        </li>
+        <li>
+          <button class="btn btn-secondary" onclick="cerrarSesion()">Cerrar sesión</button>
+        </li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <main>
+    <section class="container py-5">
+
+      <span class="badge rounded-pill text-bg-primary fw-semibold">PANEL ADMIN</span>
+      <h2 class="fs-1 fw-semibold mt-2">Hola, <span id="nombre-usuario"></span></h2>
+      <p class="mb-4">Elegí un módulo para gestionar.</p>
+
+      <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column gap-2">
+              <h3 class="card-title fs-4">Mascotas</h3>
+              <p class="card-text">Alta, edición y baja de mascotas.</p>
+              <span class="badge text-bg-secondary align-self-start" id="total-mascotas">0</span>
+              <a href="mascotas.html" class="btn btn-primary mt-auto">Ingresar</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column gap-2">
+              <h3 class="card-title fs-4">Veterinarios</h3>
+              <p class="card-text">Gestión del equipo profesional.</p>
+              <span class="badge text-bg-warning align-self-start">Próximamente</span>
+              <button class="btn btn-primary mt-auto" disabled>Ingresar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column gap-2">
+              <h3 class="card-title fs-4">Turnos</h3>
+              <p class="card-text">Agenda de turnos de la clínica.</p>
+              <span class="badge text-bg-warning align-self-start">Próximamente</span>
+              <button class="btn btn-primary mt-auto" disabled>Ingresar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col">
+          <div class="card h-100">
+            <div class="card-body d-flex flex-column gap-2">
+              <h3 class="card-title fs-4">Historia Clínica</h3>
+              <p class="card-text">Registro de consultas y tratamientos.</p>
+              <span class="badge text-bg-warning align-self-start">Próximamente</span>
+              <button class="btn btn-primary mt-auto" disabled>Ingresar</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-marca">
+      <span>La Mary</span>
+      <p>
+        Av. Siempre Viva 1234, Concordia, Entre Ríos.
+        Lunes a sábado. Urgencias 24 h.
+      </p>
+    </div>
+
+    <div class="footer-seccion">
+      <span>SECCIONES</span>
+      <a href="./index.html">Inicio</a>
+      <a href="./institucional.html">Institucional</a>
+      <a href="./contacto.html">Contacto</a>
+    </div>
+
+    <div class="footer-seccion">
+      <span>SEGUINOS</span>
+      <a href="#" target="_blank">Instagram</a>
+      <a href="#" target="_blank">Facebook</a>
+      <a href="#" target="_blank">TikTok</a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

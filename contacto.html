@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="./assets/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="base.css">
+        <title>Veterinaria La Mary</title>
+
+        <script defer src="./sesion.js"></script>
+        <script defer src="./header.js"></script>
+    </head>
+ 
+    <body>
+
+        <header>
+            <a href="./index.html" class="logo">
+                <div class="icon">
+                    <p>M</p>
+                </div>
+
+                <div class="marca">
+                    <h1>La Mary</h1>
+                    <h2>CLÍNICA VETERINARIA</h2>
+                </div>
+            </a>
+
+            <nav class="navegacion">
+                <ul>
+                    <li>
+                        <a href="./index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="./institucional.html">Institucional</a>
+                    </li>
+                    <li>
+                        <a class="active" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li id="link-login">
+                        <a href="./login.html" class="boton-container">
+                            <button>
+                                Iniciar Sesión
+                            </button>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+        </header>
+
+        <main>
+            <section class="container-fluid py-4 border-bottom">
+                <article class="container">
+                    <div class="row justify-content-start align-items-center g-2">
+                        <div class="col-12 col-md-8">
+                            <div class="col-12">
+                                <span class="badge rounded-pill text-bg-primary fw-semibold">CONTACTO</span>
+                            </div>
+                            <div class="col-12 pb-3">
+                                <h2 class="display-4 fw-semibold">Estamos a una llamada de distancia</h2>
+                            </div>
+                            <div class="col-12 text-secondary">
+                                <p>Escribinos por Whatsapp para turnos y consultas. Para una urgencia, llamanos: contamos con guardia las 24hs.</p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+
+            <section class="container-fluid py-5 bg-body-tertiary">
+                <div class="container">
+                    <div class="row g-4">
+
+                        <article class="col-12 col-md-6 ">
+                            <div class="d-flex flex-column gap-3 p-4 bg-white shadow rounded-4">
+                                <h3 class="fs-3">
+                                    Datos de contacto
+                                </h3>
+                                
+                                <div class="d-flex flex-column gap-2">
+                                    <div class="d-flex  flex-column">
+                                        <span class="text-secondary form-text fw-medium">TELÉFONO</span>
+                                        <span class="fs-4 fw-semibold text-primary">11 4567-8900</span>
+                                    </div>
+                                    
+                                    <div class="d-flex flex-column">
+                                        <span class="text-secondary form-text fw-medium">WHATSAPP</span>
+                                        <span class="fs-4 fw-semibold text-primary">11 6000-1200</span>
+                                    </div>
+                                    
+                                    <div class="d-flex flex-column">
+                                        <span class="text-secondary form-text fw-medium">EMAIL</span>
+                                        <span class="fw-normal">correo@lamary.net</span>
+                                    </div>
+                                    
+                                    <div class="d-flex flex-column">
+                                        <span class="text-secondary form-text fw-medium">DIRECCIÓN</span>
+                                        <span class="fw-medium">Av. Siempre Viva 1234, Concordia, Entre Ríos</span>
+                                    </div>
+                                    
+                                    <div class="d-flex gap-2 text-center mt-3 flex-wrap">
+                                        <a href="https://wa.me/5491145678900" target="_blank" class="container-fluid border rounded py-2 px-3 text-bg-primary">Whatsapp</a>
+                                    </div>
+                                </div>
+                            </div>
+                            </article>
+                        
+                        <article class="col-12 col-md-6 rounded p-4 bg-white shadow rounded-4">
+
+                            <div class="d-flex flex-column gap-4">
+                                <h3 class="fs-3">
+                                    Horarios de Atención
+                                </h3>
+                                
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-medium">Lunes a Viernes</span>
+                                            <span>08:00 - 20:00</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-medium">Sábados</span>
+                                            <span>09:00 - 12:00</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <span class="fw-semibold text-primary">Urgencias</span>
+                                            <span class="fw-medium text-primary">24h</span>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <p class="text-secondary">Feriados: guardia de urgencias de 9 a 18 h.</p>
+                            </div>
+                        </article>
+
+                    </div>
+                    
+                </div>
+            </section>
+
+
+        </main>
+
+        <footer>
+           <div class="footer-marca">
+                <span>La Mary</span>
+                <p>
+                    Av. Siempre Viva 1234, Concordia, Entre Ríos.
+                    Lunes a sábado. Urgencias 24 h.
+                </p>
+           </div>
+
+           <div class="footer-seccion">
+                <span>SECCIONES</span>
+                <a href="index.html">Inicio</a>
+                <a href="institucional.html">Institucional</a>
+                <a href="contacto.html">Contacto</a>
+           </div>
+
+           <div class="footer-seccion">
+                <span>SEGUINOS</span>
+                <a href="#" target="_blank">Instagram</a>
+                <a href="#" target="_blank">Facebook</a>
+                <a href="#" target="_blank">TikTok</a>
+           </div>
+        </footer>
+
+    </body>
+
+</html>
