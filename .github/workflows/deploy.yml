@@ -1,0 +1,52 @@
+# Publica la web en GitHub Pages cada vez que se hace push a main
+name: Deploy a GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Bajar el código
+        uses: actions/checkout@v5
+
+      - name: Instalar Node
+        uses: actions/setup-node@v5
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Instalar dependencias (Bootstrap)
+        run: npm ci --omit=dev
+
+      - name: Armar la carpeta que se publica (_site)
+        run: |
+          mkdir -p _site/node_modules/bootstrap
+          cp *.html *.css *.js _site/
+          cp -r assets _site/
+          cp -r node_modules/bootstrap/dist _site/node_modules/bootstrap/
+
+      - uses: actions/configure-pages@v5
+
+      - name: Subir la carpeta _site
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: _site
+
+      - name: Publicar en GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
